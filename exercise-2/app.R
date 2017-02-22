@@ -1,10 +1,12 @@
 # Load the shiny, ggplot2, and dplyr libraries
-
+library("shiny")
+library("ggplot2")
+library("dplyr")
 
 # You will once again be working with the `diamonds` data set provided by ggplot2
 # Use dplyr's `sample_n()` function to get a random 3000 rows from the data set
 # Store this sample in a variable `diamonds.sample`
-
+diamonds.sample <- sample_n(diamonds, 3000)
 
 # For convenience store the `range()` of values for the `price` and `carat` values
 # for the ENTIRE diamonds dataset.
